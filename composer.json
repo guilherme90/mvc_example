@@ -1,0 +1,49 @@
+{
+  "name": "mvc",
+  "description": "MVC implemented",
+  "version": "1.0.0",
+  "type": "project",
+  "license": "proprietary",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "Guilherme Nogueira",
+      "email": "guilhermenogueira90@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Core\\": "src/Core/",
+      "Database\\": "src/Database/",
+      "Groups\\": "src/Groups/",
+      "Users\\": "src/Users/",
+      "Home\\": "src/Home/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+
+    }
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.2.2",
+    "symfony/var-dumper": "^3.3.13"
+  },
+  "require": {
+    "ramsey/uuid": "^3.7"
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "scripts": {
+    "check": [
+      "@cs",
+      "@cs-fix"
+    ],
+    "cs": "phpcs",
+    "cs-fix": "phpcbf",
+    "dump": "composer dump-autoload --optimize",
+    "serve": "php -S 127.0.0.1:8080 -t public public/index.php"
+  }
+}
