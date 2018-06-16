@@ -17,3 +17,7 @@ $ composer install
 Dump namespaces
 ```bash
 $ composer dump
+
+Run server
+```bash
+$ composer serve
