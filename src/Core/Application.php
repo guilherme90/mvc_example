@@ -4,7 +4,7 @@ namespace Core;
 
 use Core\Controller\AbstractController;
 use Database\Connection\Connection;
-use Database\Statement\Statement;
+use Database\Statement\MySQLStatement;
 use Database\Statement\StatementInterface;
 use Home\Controllers\HomeController;
 

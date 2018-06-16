@@ -7,7 +7,7 @@ use Database\Connection\Connection;
 /**
  * @author Guilherme P. Nogueira <guilhermenogueira90@gmail.com>
  */
-class Statement implements StatementInterface
+class MySQLStatement implements StatementInterface
 {
     /**
      * @var Connection

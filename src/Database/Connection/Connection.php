@@ -46,7 +46,7 @@ class Connection implements ConnectionInterface
     /**
      * @return bool
      */
-    public function isConnected(): bool
+    public function isConnected() : bool
     {
         return $this->pdo !== null;
     }
@@ -54,7 +54,7 @@ class Connection implements ConnectionInterface
     /**
      * @return \PDO
      */
-    public function getConnection(): \PDO
+    public function getConnection() : \PDO
     {
         return $this->pdo;
     }

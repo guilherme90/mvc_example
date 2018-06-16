@@ -20,7 +20,7 @@ require_once './vendor/autoload.php';
 $config = require_once './config/database.config.php';
 
 use \Database\Connection\Connection;
-use \Database\Statement\Statement;
+use \Database\Statement\MySQLStatement;
 
 $connection = new Connection(
     $config['dbname'],
@@ -29,7 +29,7 @@ $connection = new Connection(
     $config['password']
 );
 
-$statement = new Statement($connection);
+$statement = new MySQLStatement($connection);
 
 $application = new \Core\Application($statement);
 $application->run();
