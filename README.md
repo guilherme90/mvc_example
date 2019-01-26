@@ -7,6 +7,8 @@
 - MySQL
 - Uuid
 
+corrigido bug
+
 ### Composer
 
 Install packages
